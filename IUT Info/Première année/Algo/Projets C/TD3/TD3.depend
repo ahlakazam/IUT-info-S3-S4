@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1442833878 source:c:\users\jean rémi\projets c\td3\main.c
+	<stdio.h>
+	<malloc.h>
+	<string.h>
+	<math.h>
+
+1442829706 source:c:\users\jean rémi\projets c\td3\exo2.c
+	<stdio.h>
+	<stdlib.h>
+
+1442830246 source:c:\users\jean rémi\projets c\td3\exo3.c
+	<stdio.h>
+
+1442830776 source:c:\users\jean rémi\projets c\td3\exo4.c
+	<stdio.h>
+	<math.h>
+

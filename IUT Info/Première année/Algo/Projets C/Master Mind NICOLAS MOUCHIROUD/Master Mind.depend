@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1449340190 source:c:\users\jean rémi\onedrive\iut info\algo\projets c\master mind\fonctions.c
+	<stdio.h>
+	<stdlib.h>
+	"prototypes.h"
+
+1449340337 c:\users\jean rémi\onedrive\iut info\algo\projets c\master mind\prototypes.h
+
+1449341337 source:c:\users\jean rémi\onedrive\iut info\algo\projets c\master mind\main.c
+	<stdio.h>
+	<stdlib.h>
+	"prototypes.h"
+
+1449341337 source:c:\users\jean rémi\onedrive\iut info\algo\projets c\master mind\procedures.c
+	<stdio.h>
+	<stdlib.h>
+	"prototypes.h"
+	<time.h>
+

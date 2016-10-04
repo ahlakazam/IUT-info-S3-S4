@@ -1,0 +1,32 @@
+
+./sommearg.sh
+./sommearg.sh: erreur : il manque des arguments
+***************
+./sommearg.sh --debu 4 --fin 5
+./sommearg.sh: erreur : --debu argument inconnu
+***************
+./sommearg.sh -debut 4 --fin 5
+./sommearg.sh: erreur : -debut argument inconnu
+***************
+./sommearg.sh --d 4 -f 5
+./sommearg.sh: erreur : --d argument inconnu
+***************
+./sommearg.sh --debut 4 --fin 5
+Calcul de la somme des entiers de 4 a  5
+La somme vaut : 9
+***************
+./sommearg.sh -d 4 -f 5
+Calcul de la somme des entiers de 4 a  5
+La somme vaut : 9
+***************
+./sommearg.sh --debut 44 --fin 5
+./sommearg.sh: erreur debut > fin
+***************
+./sommearg.sh --fin 5 --debut 4
+Calcul de la somme des entiers de 4 a  5
+La somme vaut : 9
+***************
+./sommearg.sh -f 5 -d 4
+Calcul de la somme des entiers de 4 a  5
+La somme vaut : 9
+***************

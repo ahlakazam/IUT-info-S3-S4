@@ -1,0 +1,75 @@
+body {
+	background-color : #FFFFCC;
+	color : #000099;
+}
+
+a {
+	color : #B7A5DF;
+	font-weight : bold;
+}
+
+a:active {
+	color : #FF9933;
+}
+
+a:visited {
+	color : #993333;
+}
+
+a:hover {
+	color : #FF9933;
+}
+
+h1 {
+	font-size : 3em;
+	font-family : French Script MT;
+	color : #006600;
+}
+
+h2 {
+	font-size : 1.5em;
+	color : #669933;
+	font-weight : bold;
+	text-decoration : underline;
+}
+
+h3 {
+	font-family : Georgia;
+	color : #7d775c;
+	font-style : italic;
+}
+address {
+	display: inline;
+}
+
+address.prefere {
+	color : red;
+}
+
+q {
+	font-weight : bold;
+}
+
+q::before {
+		content : '"';
+}
+
+q.fr {
+	color : blue;
+}
+
+q.en {
+	color : aqua;
+}
+
+q.fr::after{
+	content : '" - par';
+}
+
+q.en::after{
+	content : '" - by';
+}
+
+#prefere {
+	color : red;
+}

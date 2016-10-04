@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1444040764 source:c:\users\jean rémi\onedrive\iut info\algo\projets c\td5\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

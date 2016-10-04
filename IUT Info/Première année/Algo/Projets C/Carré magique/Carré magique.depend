@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1447670712 source:c:\users\jean rémi\onedrive\iut info\algo\projets c\carré magique\fonctions.c
+	<stdio.h>
+	<stdlib.h>
+
+1447669927 source:c:\users\jean rémi\onedrive\iut info\algo\projets c\carré magique\main.c
+	<stdio.h>
+	<stdlib.h>
+	"prototypes.h"
+
+1447668643 c:\users\jean rémi\onedrive\iut info\algo\projets c\carré magique\prototypes.h
+

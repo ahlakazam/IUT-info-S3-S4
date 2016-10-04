@@ -1,0 +1,9 @@
+1 "Centre Ville" 5
+2 "Nouvelle Piscine" 4
+3 "Eau purifiée" 6
+4 "Atelier Théâtre" 7
+5 "Gestion personnel" 8
+6 "Stop vols" 9
+7 "Routes plus sûres" 9
+8 "Rénovation gradins" 9
+9 "Crèche" 4

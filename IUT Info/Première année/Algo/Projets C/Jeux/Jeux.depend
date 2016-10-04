@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1449141078 source:c:\users\jean rémi\onedrive\iut info\algo\projets c\jeux\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

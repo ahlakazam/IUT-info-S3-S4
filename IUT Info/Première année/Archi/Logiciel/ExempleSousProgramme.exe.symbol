@@ -1,0 +1,17 @@
+< THE SYMBOL TABLE >  ExempleSousProgramme.exe  --  emu8086 assembler version: 4.08 
+===================================================================================================
+Name                     	Offset    	Size      	Type      	Segment   
+===================================================================================================
+PILE                     	00000     	-5        	SEGMENT   	(ITSELF)  
+BASE                     	00400     	-1        	LABEL     	PILE      
+DATA                     	00040     	-5        	SEGMENT   	(ITSELF)  
+VALX                     	00000     	2         	VAR       	DATA      
+RESULTAT                 	00002     	1         	VAR       	DATA      
+CODE                     	00041     	-5        	SEGMENT   	(ITSELF)  
+MAIN                     	00000     	-1        	NEAR      	CODE      
+SOUSPROGRAMME            	00019     	-1        	NEAR      	CODE      
+MOYENNE                  	00020     	-1        	NEAR      	CODE      
+===================================================================================================
+[ 17/03/2016  --  15:02:06 ] 
+< END >
+ 

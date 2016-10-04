@@ -1,0 +1,7 @@
+.anchorPane {
+-fx-background-color: blue;
+}
+.btton {
+-fx-text-fill : white
+
+}

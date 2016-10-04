@@ -1,0 +1,57 @@
+
+PILE SEGMENT STACK
+DW 512 DUP(?)
+Base:
+PILE ENDS
+
+DATA     SEGMENT
+ValX        dw      ?
+resultat db 0
+
+DATA     ENDS
+
+
+CODE SEGMENT
+ASSUME CS:CODE,DS:DATA,SS:PILE
+
+
+
+main PROC
+MOV AX,DATA     ;Positionnement de DS
+MOV DS,AX        ;Dans le segment de donnees
+
+MOV AX,PILE     ;Positionnement de DS
+MOV SS,AX       ;Dans le segment de PILE
+
+MOV AX,10
+MOV BX,20
+
+; appel du sous programme
+
+CALL  SousProgramme
+
+
+MOV AH,resultat
+INT 21H
+
+main ENDP
+
+SousProgramme    PROC
+MOV AX, 1111h
+MOV ValX, AX
+ret
+SousProgramme ENDP
+
+moyenne PROC
+MOV BL,2
+DIV BL
+MOV resultat,AL
+ret
+moyenne ENDP
+
+
+CODE ENDS
+
+
+
+; [SOURCE]: C:\Users\Thomas\OneDrive\IUT Info\Système 2\ExempleSousProgramme.asm

@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1453815920 source:c:\users\jean rémi\onedrive\iut info\algo\projets c\tad\main.cpp
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+	"prototypes.h"
+
+1453815113 source:c:\users\jean rémi\onedrive\iut info\algo\projets c\tad\fonctions.cpp
+	<iostream>
+	<stdlib.h>
+	<malloc.h>
+	"prototypes.h"
+
+1453816433 c:\users\jean rémi\onedrive\iut info\algo\projets c\tad\prototypes.h
+
+1453815871 source:c:\users\jean rémi\onedrive\iut info\algo\projets c\tad\procedures.cpp
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+	<malloc.h>
+	"prototypes.h"
+

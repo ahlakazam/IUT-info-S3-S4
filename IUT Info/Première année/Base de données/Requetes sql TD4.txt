@@ -1,0 +1,209 @@
+2.1. Donner les genres et les titres des films triés par genres.
+  SELECT DISTINCT f.genre, f.titre FROM film f ORDER BY f.genre;
+
+2.2. Donner les différents genres de films.
+  SELECT DISTINCT f.genre FROM film f;
+
+2.3. Donner les noms des clients qui comportent la lettre L en 2ème position.
+  SELECT c.cnom FROM client c WHERE c.cnom LIKE '_L%';
+
+2.4. Donner les titres, genres, noms de réalisateur des films français dans les années 90.
+  SELECT f.titre, f.genre, f.rnom FROM film f WHERE date BETWEEN 01/01/1990 AND 31/12/1999;
+
+2.5. Donner les noms et prénoms des artistes français triés par nom
+  SELECT a.anom, a.aprenom FROM artiste ORDER BY a.anom;
+
+2.6. Donner les titres des films américains, les rôles dans ces films et noms et prénoms des artistes qui les
+interprètent triés par les titres des films
+  SELECT f.titre, i.role, i.nom, i.prenom FROM film f, interprete i
+  WHERE f.id_film=i.id_film AND f.id_pays='US' ORDER BY f.titre;
+
+2.7. Donner les titres, genres et noms de réalisateur des films français dans lesquels participent des artistes
+américains, le résultat trié par les titres.
+  SELECT f.titre, f.genre, f.rnom FROM film f, inteprete i, artiste i
+  WHERE f.id_film=i.id_film AND i.inom=a.anom
+  ORDER BY f.titre;
+
+2.8. Donner le nombre de genres différents de film.
+  SELECT COUNT DISTINCT f.titre FROM film f;
+
+2.9. Donner les noms et prénoms des artistes français qui jouent dans un film américain, ainsi que le titre du
+film concerné. Le résultat sera trié par les titres de film.
+  SELECT a.nom, a.prenom, f.film FROM film f, interprete i, artiste a
+  WHERE f.id_film=i.id_film AND i.inom=a.anom
+  AND a.id_pays='FR'
+  AND f.id_pays='US'
+  ORDER BY f.titre;
+
+2.10. Donner les noms des clients dont la date d'abonnement se termine le plus tôt.
+
+2.11. Donner les références des cassettes des films policiers (genre=P).
+
+SELECT id_cassette 
+FROM cassette c,film f 
+WHERE genre=P 
+  AND c.id_film = f.id_film
+
+2.12. Donner les noms des clients qui ont fait un emprunt avant le premier septembre 2014.
+
+SELECT cnom 
+FROM client c,emprunt e
+WHERE c.id_client = e.id_client
+  AND e.date_empt < "1/09/2014"
+
+2.13. Donner les références des cassettes et les titres des films empruntés au mois de septembre 2014.
+
+SELECT id_cassette,titre
+FROM film f,cassete c,emprunt e
+WHERE e.id_film = f.id_film
+  AND e.id_cassette = c.id_cassette
+  AND e.date_empt(year) = 2014
+  AND e.date_empt(month) = 09
+
+2.14. Donner les genres des films empruntés par SMITH ou JONES.
+
+SELECT genre
+FROM emprunt e,client c1,film f,cassette c2
+WHERE e.id_client = c1.id_client
+  AND e.id_cassette = c2.id_cassette
+  AND c2.id_film = f.id_film
+  AND c1.cnom = "SMITH" OR c1.cnom = "JONES"
+
+2.15. Donner les titres des films qui n'ont pas été empruntés en septembre 2014.
+
+SELECT titre 
+FROM film f,emprunt e,cassette c
+WHERE c.id_film = f.id_film
+  AND e.id_cassette = c.id_cassette
+  AND e.date_empt(month) <> 09
+  AND e.date_empt(year) <> 2014
+
+2.16. Donner les nombres de cassettes pour chaque film.
+
+SELECT count(id_cassette)
+FROM cassette c,film f
+WHERE c.id_film = f.id_film
+
+2.17. Donner les nombre de cassettes non empruntées pour chaque film.
+
+SELECT count(id_cassette)
+FROM cassette
+WHERE NOT IN (
+    SELECT id_cassette
+    FROM cassette c,film f, emprunt e
+    WHERE c.id_film = f.id_film
+      AND e.id_cassette = c.id_cassette
+)
+
+2.18. Donner les noms des clients qui ont emprunté à la fois un film policier (P) et un film d'aventure (A).
+
+SELECT cnom
+FROM client c1,cassette c2,film f,emprunt e
+WHERE e.id_cassette = c2.id_cassette
+  AND c2.id_film = f.id_film
+  AND e.id_client = c1.id_client
+  AND f.genre = "A"
+  AND c1.cnom IN (
+                  SELECT cnom
+                  FROM client c1,cassette c2,film f,emprunt e
+                  WHERE e.id_cassette = c2.id_cassette
+                    AND c2.id_film = f.id_film
+                    AND e.id_client = c1.id_client
+                    AND f.genre = "P"
+  )
+
+2.19. Donner les noms des clients qui n'ont emprunté que des films X.
+
+SELECT cnom
+FROM client c1,cassette c2,cfilm f,emprunt e
+WHERE c1.id_client = e.id_client
+  AND c2.id_film = f.id_film
+  AND e.id_cassette  = c2.id_cassette
+  AND c1.cnom NOT IN ()
+
+2.20. Donner les noms des clients qui ont emprunté tous les films policiers (P).
+
+SELECT cnom
+FROM client c1, cassette c2, film f, emprunt e
+WHERE NOT IN (
+
+                
+)
+
+2.21. Donner les noms des clients qui ont fait un emprunt un même jour que Smith.
+
+
+
+2.22. Donner les noms des clients qui n'ont emprunté aucun film X ou E.
+
+SELECT cnom
+FROM client c, emprunt e, cassette k, film f
+WHERE c.id_client = e.id_client
+  AND e.id_cassette = k.id_cassette
+  AND k.id_film = f.id_film
+  AND f.genre NOT IN ('X', 'E')
+
+2.23. Donner les noms des clients qui ont emprunté au moins 2 cassettes en septembre (n’importe quelle année).
+2.24. Donner les nombres de cassettes empruntées pour chaque genre de film.
+2.25. Donner les noms des clients n’ayant empruntées aucune cassette.
+2.26. Donner les noms et prénoms des artistes ayant joués dans un film américain ainsi que le titre du film emprunté
+
+SELECT anom, aprenom, titre
+FROM artiste a, interprete i, film f
+WHERE a.anom = i.inom
+  AND i.id_film = f.id_film
+  AND f.id_pays = 'US'
+
+2.27. Donner les noms et prénoms, nationalité des artistes ayant joués dans un film américain et aussi dans un film français ainsi que le titre des films empruntés.
+
+SELECT anom, aprenom, titre
+FROM artiste a, interprete i, film f
+WHERE a.anom = i.inom
+  AND i.id_film = f.id_film
+  AND f.id_pays = 'US'
+  AND f.id_pays = 'FR'
+
+2.28. Quels sont les noms des clients, qui n’empruntent que des films de Luc Besson ainsi que les titres des films empruntés ?.
+
+SELECT c.cnom, f.film 
+FROM client c, emprunt e, film f, interprete i, artiste a
+WHERE c.id_client = e.id_client
+  AND e.id_film = f.id_film
+  AND f.id_film = i.id_film
+  AND i.anom = a.anom
+  AND c.cnom NOT IN (
+    SELECT c.cnom, f.film FROM client c, emprunt e, film f, interprete i, artiste a
+    WHERE c.id_client = e.id_client
+    AND e.id_film = f.id_film
+    AND f.id_film = i.id_film
+    AND i.anom = a.anom
+    AND a.anom <> 'Besson'
+    AND a.aprenom <> 'Luc');
+
+
+2.29. Quels sont les titres de films empruntés du moment avec le nombre d’emprunts triés dans l’ordre décroissant de nombre d’emprunts?
+2.30. Quels sont les titres de films empruntés du moment avec le nombre d’emprunts pour les clients masculins et pour les clients féminins, triés par les titres de films?
+2.31. Quel est le nombre de films produit dans chaque pays trié par l’ordre décroissant de nombre de films.
+
+SELECT count(id_film), pnom
+FROM film f, pays p
+WHERE f.id_pays = p.id_pays
+GROUP BY id_pays
+HAVING ASC
+
+2.32. Quel sont l’artiste et le titre du film dont il est réalisateur et dans lequel il joue un rôle. Le résultat est trié par l’ordre croissant de nom et prénom de l’article.
+
+SELECT anom, aprenom
+FROM  artiste a, film f, realisateur r
+WHERE a.anom = r.rnom 
+  AND r.rnom = f.rnom
+  IN (
+      SELECT anom, aprenom
+      FROM  artiste a, film f, interprete i
+      WHERE a.anom = i.inom 
+        AND i.id_film = f.id_film
+)
+
+2.33. Quels sont les titres de films, les noms et les prénoms du réalisateur ainsi que le nombre d’emprunt de ce film en ce moment (en cours) ? Le résultat est trié, dans l’ordre décroissant, par le nombre d’emprunts en ce moment de ce film.
+2.34. Quels sont les noms des clients, qui empruntent tous les films de Luc Besson du club ?
+2.35. Quels sont le nom, le pays des clients qui empruntent que des films de son pays.

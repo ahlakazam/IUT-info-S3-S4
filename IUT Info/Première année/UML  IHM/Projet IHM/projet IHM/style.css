@@ -1,0 +1,15 @@
+.anchorPane {
+-fx-background-color: silver;
+}
+.btton {
+-fx-text-fill : white;
+-fx-font-family:"arial narrow";
+
+}
+.connexionLabel 
+{
+	-fx-font-size:14px;
+}
+.gridPane {
+	-fx-border-color:red;
+}

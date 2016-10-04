@@ -1,0 +1,30 @@
+# depslib dependency file v1.0
+1453710978 source:c:\users\jean rémi\onedrive\iut info\algo\projets c\td piles c++\fonctions.cpp
+	<iostream>
+	<stdlib.h>
+	<malloc.h>
+	"prototypes.h"
+	"Tests_Unit.h"
+
+1453709002 c:\users\jean rémi\onedrive\iut info\algo\projets c\td piles c++\prototypes.h
+
+1453708473 c:\users\jean rémi\onedrive\iut info\algo\projets c\td piles c++\tests_unit.h
+
+1453711673 source:c:\users\jean rémi\onedrive\iut info\algo\projets c\td piles c++\main.cpp
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+	<malloc.h>
+	"Tests_Unit.h"
+	"prototypes.h"
+
+1453712269 source:c:\users\jean rémi\onedrive\iut info\algo\projets c\td piles c++\procedures.cpp
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+	<malloc.h>
+	"prototypes.h"
+	"Tests_Unit.h"
+
+1453711071 source:c:\users\jean rémi\onedrive\iut info\algo\projets c\td piles c++\a.cpp
+

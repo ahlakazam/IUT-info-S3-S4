@@ -1,0 +1,42 @@
+# depslib dependency file v1.0
+1446452251 source:c:\users\jean rémi\onedrive\iut info\algo\projets c\td7\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"exercice16.h"
+
+1445523060 c:\users\jean rémi\onedrive\iut info\algo\projets c\td7\prototype.h
+
+1445249566 c:\users\jean rémi\onedrive\iut info\algo\projets c\td7\ligne.c
+
+1445516920 source:c:\users\jean rémi\onedrive\iut info\algo\projets c\td7\dessin.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1445250368 source:c:\users\jean rémi\onedrive\iut info\algo\projets c\td7\exercice1.c
+	<stdio.h>
+	<stdlib.h>
+	"prototype.h"
+	"dessin.c"
+
+1445250585 c:\users\jean rémi\onedrive\iut info\algo\projets c\td7\dessin.c
+	<stdio.h>
+	<stdlib.h>
+
+1445248367 source:c:\users\jean rémi\onedrive\iut info\algo\projets c\td7\exercice3.c
+	<stdio.h>
+	<stdlib.h>
+
+1446449678 source:c:\users\jean rémi\onedrive\iut info\algo\projets c\td7\tableaux.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1446451691 c:\users\jean rémi\onedrive\iut info\algo\projets c\td7\exercice16.h
+
+1446451905 source:c:\users\jean rémi\onedrive\iut info\algo\projets c\td7\exercice16.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

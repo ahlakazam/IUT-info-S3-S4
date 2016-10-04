@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1455205563 source:c:\users\jean rémi\onedrive\iut info\algo\projets c\léa\main.cpp
+	<iostream>
+	<time.h>
+
+1455205675 source:c:\users\jean rémi\onedrive\iut info\algo\projets c\léa\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+

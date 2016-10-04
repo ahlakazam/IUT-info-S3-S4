@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1448873465 source:c:\users\jean rémi\onedrive\iut info\algo\projets c\td9\fonctions.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"prototypes.h"
+	<time.h>
+
+1448873465 source:c:\users\jean rémi\onedrive\iut info\algo\projets c\td9\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"prototypes.h"
+
+1448873386 c:\users\jean rémi\onedrive\iut info\algo\projets c\td9\prototypes.h
+

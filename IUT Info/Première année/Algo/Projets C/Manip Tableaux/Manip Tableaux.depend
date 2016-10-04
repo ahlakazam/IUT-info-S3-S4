@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1450360667 source:c:\users\jean rémi\onedrive\iut info\algo\projets c\manip tableaux\main.c
+	<stdio.h>
+	<stdlib.h>
+	"prototypes.h"
+
+1450079816 source:c:\users\jean rémi\onedrive\iut info\algo\projets c\manip tableaux\prototypes.c
+
+1450360004 source:c:\users\jean rémi\onedrive\iut info\algo\projets c\manip tableaux\fonctions.c
+	<stdio.h>
+	<stdlib.h>
+	"prototypes.h"
+
+1450360667 source:c:\users\jean rémi\onedrive\iut info\algo\projets c\manip tableaux\procedures.c
+	<stdio.h>
+	<stdlib.h>
+	"prototypes.h"
+
+1450360617 c:\users\jean rémi\onedrive\iut info\algo\projets c\manip tableaux\prototypes.h
+

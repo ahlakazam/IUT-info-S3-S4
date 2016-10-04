@@ -1,0 +1,40 @@
+body {
+	background: linear-gradient(#00FEF6, #01BFB8);
+	font-family: Comic Sans MS;
+}
+
+h1 {
+	text-align : center;
+	margin: 0 0 2em 0;
+}
+
+h2 {
+	text-align: center;
+}
+
+table {
+	color: #9B0514;
+}
+
+img.centre {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 1em;
+}
+
+
+div#edt {
+	background-image: url(./images/edt.png);
+	background-repeat: no-repeat;
+}
+
+div#loisir {
+	background-image: url("./images/loisir.jpg");
+	background-repeat: no-repeat;	
+}
+
+div#divers {
+	background-image: url("./images/divers.jpg");
+	background-repeat: no-repeat;	
+}

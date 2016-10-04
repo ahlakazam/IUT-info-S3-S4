@@ -1,0 +1,25 @@
+programme pedagogique national 
+DUT Informatique 2013
+Champs disciplinaires
+Les champs disciplinaires informatique (environ 50% des enseignements)
+Le champ disciplinaire Algorithmique - Programmation - Langages couvre l'ensemble du spectre  
+de l'activite de developpement de logiciels. Outre la presentation des bases theoriques de la 
+construction d'un programme (algorithmique, decomposition de problemes en sous-problemes, mecanismes 
+de validation), la presentation de differents paradigmes de programmation (notamment procedural et
+objet), plusieurs langages de programmation sont decouverts et utilises (au choix des equipes 
+pedagogiques) pour appliquer les differentes notions. Des environnements professionnels de 
+developpement sont egalement presentes et utilises.
+
+Le champ disciplinaire  Architecture materielle - Systemes d'exploitation - Reseaux concerne a la
+fois les connaissances de base sur le materiel (codage de l'information, fonctionnement interne des
+ordinateurs), les systemes d'exploitation professionnels multitaches et multi-utilisateurs (utilisation,
+administration, utilisation des services par programmation), ainsi que les reseaux et leurs normes
+(organisation, fonctionnement, elements d'administration, techniques de programmation d'applications 
+reparties).
+
+Le champ disciplinaire  Web - Internet - Mobilite met l'accent sur l'ensemble des solutions 
+technologiques impulsees par le developpement du reseau mondial Web. Il presente d'une part les 
+technologies de developpement de services Web complets et, d'autre part, sous le terme generique de
+mobilite, il couvre les developpements de solutions applicatives sur des plates-formes differentes
+des ordinateurs de bureau : telephones intelligents (smartphones), tablettes et autres equipements. 
+

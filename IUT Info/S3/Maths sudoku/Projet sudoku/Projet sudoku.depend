@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1473073523 source:c:\users\thomas\onedrive\iut info\s3\maths sudoku\projet sudoku\main.cpp
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+	"prototypes.h"
+
+1473074212 source:c:\users\thomas\onedrive\iut info\s3\maths sudoku\projet sudoku\fonctions.cpp
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+
+1473072530 c:\users\thomas\onedrive\iut info\s3\maths sudoku\projet sudoku\prototypes.h
+

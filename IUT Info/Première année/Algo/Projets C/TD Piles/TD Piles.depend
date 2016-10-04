@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1452787450 source:c:\users\jean rémi\onedrive\iut info\algo\projets c\td piles\fonctions.c
+	<stdio.h>
+	<stdlib.h>
+	<malloc.h>
+	"prototypes.h"
+
+1452783681 c:\users\jean rémi\onedrive\iut info\algo\projets c\td piles\prototypes.h
+
+1452785967 source:c:\users\jean rémi\onedrive\iut info\algo\projets c\td piles\main.c
+	<stdio.h>
+	<stdlib.h>
+	<malloc.h>
+	"prototypes.h"
+
+1452785899 source:c:\users\jean rémi\onedrive\iut info\algo\projets c\td piles\procedures.c
+	<stdio.h>
+	<stdlib.h>
+	<malloc.h>
+	"prototypes.h"
+

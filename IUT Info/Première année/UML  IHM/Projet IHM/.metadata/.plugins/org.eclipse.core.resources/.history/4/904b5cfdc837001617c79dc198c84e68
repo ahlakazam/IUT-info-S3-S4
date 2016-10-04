@@ -1,0 +1,57 @@
+package application;
+
+import java.io.IOException;
+
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.stage.Stage;
+
+public class InformationList {
+	
+	private Student currentStudent;
+
+    @FXML
+    private Button disconnect;
+
+    @FXML
+    private Button changeAnswers;
+    
+    void initData(Student student){
+    	this.currentStudent = student;    	
+    }
+
+    @FXML
+    void disconnect(ActionEvent event) {
+    	try {
+            FXMLLoader fxmlLoader=new FXMLLoader(getClass().getClassLoader().getResource("acceuil.fxml"));
+            Parent root = fxmlLoader.load();
+            Stage stage=(Stage) disconnect.getScene().getWindow();
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    @FXML
+    void modifyData(ActionEvent event) {
+    	try {
+            FXMLLoader fxmlLoader=new FXMLLoader(getClass().getClassLoader().getResource("generalForm.fxml"));
+            Parent root = fxmlLoader.load();
+            Stage stage=(Stage) changeAnswers.getScene().getWindow();
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+}
